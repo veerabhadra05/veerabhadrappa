@@ -33,7 +33,7 @@ const Achievements = () => {
       icon: FileText,
       color: 'sky-primary',
       gradient: 'from-sky-primary to-sky-light',
-      verifyUrl: '#'
+      verifyUrl: 'https://www.credly.com/badges/307f3c60-5a99-4861-855a-fff4a18034e1'
     },
     {
       title: 'Introduction to Environmental Economics',
