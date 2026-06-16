@@ -26,6 +26,16 @@ const Achievements = () => {
       verifyUrl: 'https://www.credly.com/badges/c74c919a-096f-489f-b22f-f0202f7bdf6c/linked_in?t=sg1dol'
     },
     {
+      title: 'Python Essentials 2',
+      issuer: 'Cisco Networking Academy',
+      type: 'Programming',
+      description: 'Advanced Python certification covering modules, file handling, exceptions, OOP concepts, and intermediate Python programming.',
+      icon: FileText,
+      color: 'sky-primary',
+      gradient: 'from-sky-primary to-sky-light',
+      verifyUrl: '#'
+    },
+    {
       title: 'Introduction to Environmental Economics',
       issuer: 'NPTEL',
       type: 'Academic',
@@ -35,6 +45,7 @@ const Achievements = () => {
       gradient: 'from-sky-primary to-sky-light'
     }
   ];
+
 
   return (
     <section id="achievements" className="section-padding">
