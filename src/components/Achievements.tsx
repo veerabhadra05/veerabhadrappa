@@ -170,17 +170,18 @@ const Achievements = () => {
               <div className="text-gray-600 font-medium">Award Won</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-sky-primary/5 to-sky-light/5 rounded-lg">
-              <div className="text-3xl font-bold text-sky-primary mb-2">2</div>
+              <div className="text-3xl font-bold text-sky-primary mb-2">3</div>
               <div className="text-gray-600 font-medium">Certifications</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-orange-primary/5 to-orange-light/5 rounded-lg">
-              <div className="text-3xl font-bold text-orange-primary mb-2">6+</div>
+              <div className="text-3xl font-bold text-orange-primary mb-2">15+</div>
               <div className="text-gray-600 font-medium">Technical Skills</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-sky-primary/5 to-sky-light/5 rounded-lg">
-              <div className="text-3xl font-bold text-sky-primary mb-2">2</div>
+              <div className="text-3xl font-bold text-sky-primary mb-2">4</div>
               <div className="text-gray-600 font-medium">Projects</div>
             </div>
+
           </div>
         </div>
       </div>
