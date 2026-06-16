@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Code, Database } from 'lucide-react';
+import { ExternalLink, Github, Code, Database, Brain, ShoppingCart } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -35,8 +35,41 @@ const Projects = () => {
       ],
       codeUrl: 'https://github.com/veerabhadra05/VibeCoding/tree/main/ToDo_List_App',
       liveUrl: 'https://todo-list-by-veera.lovable.app/'
+    },
+    {
+      title: 'AI Image Authenticity Detector',
+      description: 'AI-powered web application that detects whether an uploaded image is real (human-captured) or fake (AI-generated) using a CNN model. Built as a B.Tech final-year project.',
+      technologies: ['Python', 'Flask', 'TensorFlow', 'OpenCV', 'SQLite', 'AI'],
+      icon: Brain,
+      gradient: 'from-orange-primary to-sky-primary',
+      features: [
+        'Upload image for authenticity detection',
+        'Predicts Real or Fake with confidence score',
+        'CNN-based image classification model',
+        'Secure login and registration system',
+        'Clean Flask-powered web interface'
+      ],
+      codeUrl: 'https://github.com/veerabhadra05/ai-image-authenticity-detector-flask-cnn',
+      liveUrl: ''
+    },
+    {
+      title: 'VeeMart E-commerce Web App',
+      description: 'Full-stack e-commerce web application for browsing products and managing a shopping cart, with a React frontend and Flask-powered backend APIs.',
+      technologies: ['React', 'Flask', 'JavaScript', 'E-commerce'],
+      icon: ShoppingCart,
+      gradient: 'from-sky-primary to-orange-light',
+      features: [
+        'Product browsing experience',
+        'Cart management with live updates',
+        'Responsive, mobile-friendly UI',
+        'Dynamic product rendering',
+        'REST API integration'
+      ],
+      codeUrl: 'https://github.com/veerabhadra05/veemart-an-ecommerce-web',
+      liveUrl: 'https://veemart-web.vercel.app/'
     }
   ];
+
 
   return (
     <section id="projects" className="section-padding bg-gray-50">

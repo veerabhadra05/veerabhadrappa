@@ -1,14 +1,14 @@
-import { Code, Database, Lightbulb, MessageSquare, Users, Zap } from 'lucide-react';
+import { Code, Database, Lightbulb, MessageSquare, Users, Zap, Layout, Server, Wrench, Library } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
-  const technicalSkills = [
-    { name: 'Python', icon: Code },
-    { name: 'Java', icon: Code },
-    { name: 'JavaScript', icon: Code },
-    { name: 'HTML & CSS', icon: Code },
-    { name: 'SQL & MySQL', icon: Database },
-    { name: 'C Programming', icon: Code },
+  const skillGroups = [
+    { title: 'Languages', icon: Code, skills: ['Python', 'JavaScript', 'SQL'] },
+    { title: 'Frontend', icon: Layout, skills: ['HTML', 'CSS', 'React.js'] },
+    { title: 'Backend', icon: Server, skills: ['Flask'] },
+    { title: 'Databases', icon: Database, skills: ['MySQL', 'SQLite'] },
+    { title: 'Tools', icon: Wrench, skills: ['Git', 'GitHub', 'Streamlit', 'VS Code', 'Jupyter Notebook'] },
+    { title: 'Libraries', icon: Library, skills: ['NumPy', 'Pandas', 'Matplotlib', 'TensorFlow', 'OpenCV'] },
   ];
 
   const softSkills = [
@@ -26,15 +26,15 @@ const About = () => {
             About <span className="text-orange-primary">Me</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            I'm an enthusiastic B.Tech student specializing in Computer Science and Engineering, 
-            currently studying at St. Johns College of Engineering & Technology(JNTUA). 
-            I enjoy turning complex problems into simple, beautiful solutions.
+            I'm a B.Tech graduate in Computer Science and Engineering from St. Johns College of
+            Engineering & Technology (JNTUA), passionate about Python full-stack development and
+            building AI-driven applications that turn complex problems into elegant solutions.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           
-          {/* Education & Overview */}
+          {/* Education & Soft Skills */}
           <div className="space-y-8 fade-in fade-in-delay-1">
             <Card className="p-6 bg-white border-0 shadow-lg">
               <CardContent className="p-0">
@@ -45,20 +45,19 @@ const About = () => {
                 <div className="space-y-3">
                   <div>
                     <h4 className="font-semibold text-lg text-gray-700">
-                      Bachelor of Technology
+                      Bachelor of Technology (Completed)
                     </h4>
                     <p className="text-orange-primary font-medium">
                       Computer Science & Engineering
                     </p>
                     <p className="text-gray-600">
-                      St. Johns College of Engineering & Technology(JNTUA)
+                      St. Johns College of Engineering & Technology (JNTUA)
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Soft Skills */}
             <Card className="p-6 bg-white border-0 shadow-lg">
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
@@ -81,19 +80,31 @@ const About = () => {
 
           {/* Technical Skills */}
           <div className="fade-in fade-in-delay-2">
-            <Card className="p-6 bg-white border-0 shadow-lg">
+            <Card className="p-6 bg-white border-0 shadow-lg h-full">
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                   <span className="w-3 h-3 bg-orange-primary rounded-full mr-3"></span>
                   Technical Skills
                 </h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {technicalSkills.map((skill, index) => (
-                    <div key={index} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200">
-                      <div className="p-2 bg-orange-primary/10 rounded-lg">
-                        <skill.icon className="w-5 h-5 text-orange-primary" />
+                <div className="space-y-5">
+                  {skillGroups.map((group, idx) => (
+                    <div key={idx}>
+                      <div className="flex items-center mb-3">
+                        <div className="p-2 bg-orange-primary/10 rounded-lg mr-3">
+                          <group.icon className="w-5 h-5 text-orange-primary" />
+                        </div>
+                        <h4 className="font-semibold text-gray-800">{group.title}</h4>
                       </div>
-                      <span className="font-medium text-gray-700">{skill.name}</span>
+                      <div className="flex flex-wrap gap-2 pl-1">
+                        {group.skills.map((skill, sIdx) => (
+                          <span
+                            key={sIdx}
+                            className="px-3 py-1 bg-orange-primary/10 text-orange-primary text-sm font-medium rounded-full hover:bg-orange-primary hover:text-white transition-colors duration-200"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
