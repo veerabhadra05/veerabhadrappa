@@ -79,37 +79,35 @@ const About = () => {
           </div>
 
           {/* Technical Skills */}
-          <div className="fade-in fade-in-delay-2">
-            <Card className="p-6 bg-white border-0 shadow-lg h-full">
-              <CardContent className="p-0">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                  <span className="w-3 h-3 bg-orange-primary rounded-full mr-3"></span>
-                  Technical Skills
-                </h3>
-                <div className="space-y-5">
-                  {skillGroups.map((group, idx) => (
-                    <div key={idx}>
-                      <div className="flex items-center mb-3">
-                        <div className="p-2 bg-orange-primary/10 rounded-lg mr-3">
-                          <group.icon className="w-5 h-5 text-orange-primary" />
-                        </div>
-                        <h4 className="font-semibold text-gray-800">{group.title}</h4>
+          <div className="fade-in fade-in-delay-2 space-y-6">
+            <h3 className="text-2xl font-bold text-gray-800 flex items-center">
+              <span className="w-3 h-3 bg-orange-primary rounded-full mr-3"></span>
+              Technical Skills
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {skillGroups.map((group, idx) => (
+                <Card key={idx} className="p-5 bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <CardContent className="p-0">
+                    <div className="flex items-center mb-4">
+                      <div className="p-2 bg-sky-primary/10 rounded-lg mr-3">
+                        <group.icon className="w-5 h-5 text-sky-primary" />
                       </div>
-                      <div className="flex flex-wrap gap-2 pl-1">
-                        {group.skills.map((skill, sIdx) => (
-                          <span
-                            key={sIdx}
-                            className="px-3 py-1 bg-orange-primary/10 text-orange-primary text-sm font-medium rounded-full hover:bg-orange-primary hover:text-white transition-colors duration-200"
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
+                      <h4 className="font-semibold text-gray-800">{group.title}</h4>
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                    <div className="flex flex-wrap gap-2">
+                      {group.skills.map((skill, sIdx) => (
+                        <span
+                          key={sIdx}
+                          className="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:bg-sky-primary/10 hover:text-sky-primary transition-colors duration-200"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>
