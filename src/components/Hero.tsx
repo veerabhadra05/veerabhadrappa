@@ -25,14 +25,14 @@ const Hero = () => {
                 Ulthi <span className="bg-gradient-to-r from-orange-primary to-sky-primary bg-clip-text text-transparent">Veerabhadrappa</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 font-medium">
-                B.Tech Computer Science & Engineering Student
+                Python Full Stack Developer | B.Tech CSE Graduate
               </p>
             </div>
             
             <p className="text-lg text-gray-500 leading-relaxed max-w-2xl">
-              Driven by technology and innovation, I'm dedicated to building creative solutions 
-              through code. Currently pursuing my B.Tech degree while exploring the exciting worlds 
-              of data science, web development, and software engineering.
+              B.Tech CSE graduate with hands-on experience in Python full-stack development and
+              AI-based applications. Skilled in building scalable web applications using Flask and
+              React, with strong interest in backend engineering and machine learning systems.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
