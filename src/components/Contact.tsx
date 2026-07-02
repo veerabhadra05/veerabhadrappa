@@ -79,15 +79,15 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Adoni, Andhra Pradesh India',
-      href: 'https://www.google.com/maps/search/?api=1&query=Adoni%2C+Andhra+Pradesh+India',
+      value: 'Bangalore, Karnataka India',
+      href: 'https://www.google.com/maps/search/?api=1&query=Bengaluru%2C+Karnataka+India',
       color: 'orange-primary'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Connect with me',
-      href: 'https://www.linkedin.com/in/veerabhadrappa-ulthi-5073631b6',
+      href: 'https://www.linkedin.com/in/veerabhadrappaulthi/',
       color: 'sky-primary'
     }
   ];
