@@ -59,11 +59,22 @@ const Footer = () => {
                 <span>+91 7330776100</span>
               </a>
               <a 
-                href="#"
+                href="https://www.linkedin.com/in/veerabhadrappaulthi/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-sky-primary transition-colors duration-200"
               >
                 <Linkedin className="w-5 h-5" />
                 <span>LinkedIn Profile</span>
+              </a>
+              <a 
+                href="https://github.com/veerabhadra05"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 text-gray-300 hover:text-orange-primary transition-colors duration-200"
+              >
+                <Github className="w-5 h-5" />
+                <span>GitHub Profile</span>
               </a>
             </div>
           </div>
