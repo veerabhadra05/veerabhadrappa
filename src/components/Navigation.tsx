@@ -63,7 +63,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navigationItems.map((item) => (
               <button
                 key={item.href}
@@ -73,6 +73,27 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            {/* Social Links */}
+            <div className="flex items-center space-x-3 pl-4 border-l border-border">
+              <a
+                href="https://github.com/veerabhadra05"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-orange-primary transition-colors duration-200 p-2 hover:bg-orange-50 rounded-lg"
+                aria-label="GitHub Profile"
+              >
+                <GitHubIcon />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/veerabhadrappaulthi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-orange-primary transition-colors duration-200 p-2 hover:bg-orange-50 rounded-lg"
+                aria-label="LinkedIn Profile"
+              >
+                <LinkedInIcon />
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
