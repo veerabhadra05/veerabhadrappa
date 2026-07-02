@@ -120,6 +120,26 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
+              <div className="flex items-center space-x-4 px-4 pt-4 border-t border-border mt-4">
+                <a
+                  href="https://github.com/veerabhadra05"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-orange-primary transition-colors duration-200 p-2 hover:bg-gray-50 rounded-lg"
+                  aria-label="GitHub Profile"
+                >
+                  <GitHubIcon />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/veerabhadrappaulthi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-orange-primary transition-colors duration-200 p-2 hover:bg-gray-50 rounded-lg"
+                  aria-label="LinkedIn Profile"
+                >
+                  <LinkedInIcon />
+                </a>
+              </div>
             </div>
           </div>
         )}
